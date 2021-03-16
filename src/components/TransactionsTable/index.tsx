@@ -6,7 +6,7 @@ export function TransactionsTable(){
   useEffect(() =>{
     api.get('api/transactions')
     .then(resp => {
-      console.log('resp', resp)
+      console.log('resp', resp.data)
     })
   }, [])
   return (
