@@ -2,13 +2,15 @@ import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   :root{
-    --background:#f0f2f5;
+    /* --background:#f0f2f5; */
+    --background:#e9e9e9;
     --red:#e52e4d;
     --blue:#5429cc;
     --blue-light:#6933ff;
     --text-title:#363f5f;
     --text-body:#969cb3;
-    --shape:#FFFFFF
+    --shape:#FFFFFF;
+    --green: #33cc95;
   }
 
   * {
@@ -30,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
   // REM = 1rem = font-size do navegador "16px"
 
   body{
-    background: var(---background);
+    background: var(--background);
     -webkit-font-smooth: antialiased;
   }
 
