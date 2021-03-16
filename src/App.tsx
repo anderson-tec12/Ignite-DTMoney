@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
+import {GlobalStyles} from './styles/globals'
 
 export function App() {
   return (
     <div className="App">
       <h1>Initial</h1>
+      <GlobalStyles />
     </div>
   );
 }
