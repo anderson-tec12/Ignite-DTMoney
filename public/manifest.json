@@ -10,7 +10,7 @@
   ],
   "start_url": "/index.html",
   "display": "fullscreen",
-  "orientation": "portrait",
+  "orientation": "landscape",
   "background_color":"#333333",
   "lang":"pt-BR"
 }
