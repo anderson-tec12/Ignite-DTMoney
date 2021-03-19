@@ -20,15 +20,26 @@ export function NewTransactionModal({isOpen,onRequestClose}:NewTransactionModalP
   const [value, setValue] = useState(0)
   const [category, setCategory] = useState('')
 
-  const handleCreateNewTransaction = (event: FormEvent) : void => {
+  const handleCreateNewTransaction = async (event: FormEvent) : Promise<void> => {
     event.preventDefault()
 
-    createTransaction({
+    await createTransaction({
       category,
       title,
       type,
-      amount:value
+      amount:value,
+      createdAt: new Date()
     })
+
+    onRequestClose()
+    resetValuesModal()
+  }
+
+  const resetValuesModal = ():void => {
+    setType('deposit')
+    setTitle('')
+    setValue(0)
+    setCategory('')
   }
 
   return(
