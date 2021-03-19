@@ -20,7 +20,7 @@ export function TransactionsTable(){
         </thead>
 
         <tbody>
-          {console.log('INICIO',transactions)}
+          
           {
             transactions.map(transaction => (
               <tr key={transaction.id}>
